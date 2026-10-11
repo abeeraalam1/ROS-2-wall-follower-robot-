@@ -2,9 +2,7 @@
 
 A two-wheeled differential-drive robot in **Gazebo Harmonic** that **follows walls with a lidar** and **drives to waypoints with odometry**. The motion controllers use a **PID controller I wrote from scratch**, with no control library. Everything runs in **Docker**, so the whole simulation starts with one command on any Linux machine.
 
-![Wall following, top-down view of a Gazebo run](docs/media/wall_follow.gif)
-
-> 🎥 _Replace this with a screen recording of the Gazebo GUI + RViz once you run it locally (see [Recording a demo](#recording-a-demo)). The animation above is generated from the logged ground-truth pose of a real headless Gazebo run._
+<img width="520" height="520" alt="demo" src="https://github.com/user-attachments/assets/454bf528-225d-4b0c-8a86-b61d57647960" />
 
 [![CI](../../actions/workflows/ci.yml/badge.svg)](../../actions/workflows/ci.yml)
 ![ROS 2 Jazzy](https://img.shields.io/badge/ROS%202-Jazzy-22314E)
