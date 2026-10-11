@@ -1,0 +1,17 @@
+# GUI on a Linux host with X11:
+#   xhost +local:docker
+#   docker compose run --rm sim ros2 launch diffbot_control wall_follow.launch.py rviz:=true
+services:
+  sim:
+    build: .
+    image: ros2-pid-diffbot
+    network_mode: host
+    ipc: host
+    environment:
+      - DISPLAY=${DISPLAY:-:0}
+      - QT_X11_NO_MITSHM=1
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      - ./logs:/ws/logs
+    devices:
+      - /dev/dri:/dev/dri

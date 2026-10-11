@@ -1,0 +1,16 @@
+# Waypoints are in the odom frame (robot starts at 0,0 facing +x).
+waypoint_follower:
+  ros__parameters:
+    use_sim_time: true
+    # flat list: [x1, y1, x2, y2, ...]
+    waypoints: [2.5, 0.0, 2.5, 2.0, 0.5, 2.5, -1.0, 1.0, 0.0, 0.0]
+    loop: false
+    goal_tolerance: 0.12      # [m]
+    max_linear_speed: 0.4     # [m/s]
+    max_angular_speed: 1.5    # [rad/s]
+    heading_kp: 3.0
+    heading_ki: 0.0
+    heading_kd: 0.3
+    distance_kp: 0.8
+    distance_ki: 0.05
+    distance_kd: 0.1

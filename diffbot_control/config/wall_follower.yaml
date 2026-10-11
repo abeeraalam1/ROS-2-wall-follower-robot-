@@ -1,0 +1,16 @@
+# Tuned in Gazebo; see README "PID tuning notes".
+wall_follower:
+  ros__parameters:
+    use_sim_time: true
+    side: right               # which wall to follow: left | right
+    desired_distance: 0.5     # [m]
+    lookahead: 0.4            # [m] look-ahead distance L
+    beam_angle_deg: 50.0      # [deg] angle between the two wall beams
+    max_linear_speed: 0.35    # [m/s]
+    max_angular_speed: 1.5    # [rad/s]
+    front_stop_distance: 0.55 # [m] turn in place below this
+    front_slow_distance: 1.2  # [m] start slowing down below this
+    kp: 2.5
+    ki: 0.1
+    kd: 0.15
+    derivative_tau: 0.05      # [s] derivative low-pass filter
