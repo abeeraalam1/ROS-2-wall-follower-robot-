@@ -25,17 +25,17 @@ A two-wheeled differential-drive robot in **Gazebo Harmonic** that **follows wal
 
 ## Results (from a headless Gazebo run)
 
-**Wall following:** one lap of a course with straight walls plus inside and outside corners takes 97 s, and the robot never touches a wall (its centre stays at least 0.36 m from every wall).
+**Wall following:** one lap of a course with straight walls plus inside and outside corners takes 96 s, and the robot never touches a wall (its centre stays at least 0.37 m from every wall).
 
 ![Wall following trajectory and distance error](docs/media/wall_follow.png)
 
 | Metric (target distance 0.50 m) | Value |
 |---|---|
-| Median distance error while following | **2.2 cm** |
-| RMS distance error while following | 7.8 cm |
-| 90th percentile error | 13 cm (the peaks come right after corners) |
+| Median distance error while following | **2.5 cm** |
+| RMS distance error while following | 7.4 cm |
+| 90th percentile error | 11.8 cm (the peaks come right after corners) |
 
-**Waypoint following:** visits 5 waypoints and returns to the start in **31 s**, stopping within the 12 cm goal tolerance.
+**Waypoint following:** visits 5 waypoints and returns to the start in **31 s** (30.7 s), stopping at the 12 cm goal tolerance.
 
 ![Waypoint path and heading error](docs/media/waypoints.png)
 
