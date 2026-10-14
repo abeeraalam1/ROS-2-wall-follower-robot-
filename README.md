@@ -1,6 +1,6 @@
 # ROS 2 PID Diff-Drive Robot (Gazebo)
 
-A two-wheeled differential-drive robot in **Gazebo Harmonic** that **follows walls with a lidar** and **drives to waypoints with odometry**. The motion controllers use a **PID controller I wrote from scratch**, with no control library. Everything runs in **Docker**, so the whole simulation starts with one command on any Linux machine.
+A two-wheeled differential-drive robot in **Gazebo Harmonic** that **follows walls with a lidar** and **drives to waypoints with odometry**. The motion controllers use a **PID controller** with no control library. Everything runs in **Docker**, so the whole simulation starts with one command on any Linux machine.
 
 <img width="520" height="520" alt="demo" src="https://github.com/user-attachments/assets/454bf528-225d-4b0c-8a86-b61d57647960" />
 
